@@ -6,12 +6,12 @@ WORKDIR '/app'
 COPY package.json .
 
 
-CMD ["npm", "install"]
+RUN npm install
 
 
 COPY . .
 
 
-# CMD ["npm", "run", "start"]
+CMD ["npm", "run", "start"]
 
 
